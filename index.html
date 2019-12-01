@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Recordbook</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src *  data: blob: 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * data: blob: 'unsafe-inline'; font-src * data: blob: 'unsafe-inline';">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="importmap-type" content="systemjs-importmap">
+  <script type="systemjs-importmap">
+      {
+        "imports": {
+          "single-spa": "./assets/single-spa.min.js",
+          "app1": "http://10.10.114.97:4301/main.js",
+          "app2": "http://10.10.114.97:4302/main.js",
+          "navbar": "http://10.10.114.97:4303/main.js"          
+        }
+      }
+  </script>
+  <script>
+    var global = global || window;
+  </script>
+  <link rel="preload" href="./assets/single-spa.min.js" as="script" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/system.min.js"></script>
+  <script src="./assets/zone.js"></script>
+  <script src="./assets/import-map-overrides.js"></script>
+  <script src="./assets/amd.min.js"></script>
+  <script src="./assets/named-exports.js"></script>
+  <script src="./assets/named-register.min.js"></script>
+  <script src="./assets/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body class="data-container">
+</body>
+
+</html>

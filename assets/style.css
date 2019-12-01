@@ -1,0 +1,14 @@
+#single-spa-application\:navbar { grid-area: navbar; }
+#single-spa-application\:app1 { grid-area: app1; }
+#single-spa-application\:app2 { grid-area: app2; }
+
+.data-container {
+  display: grid;
+  grid-template-areas:
+    'navbar navbar navbar'
+    'app1 app1 app2';
+}
+
+.data-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
