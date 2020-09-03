@@ -8,7 +8,7 @@
   "author": "Shashi Bhushan Verma",
   "license": "MIT",
   "devDependencies": {
-    "serve": "^10.1.1"
+    "serve": "^10.1.2"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
